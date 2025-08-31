@@ -1,0 +1,9 @@
+class Friends
+{
+	public static void main(String[]args)
+	{
+		System.out.println("Ranjith");
+		System.out.println("2r2d3s");
+		
+	}
+}

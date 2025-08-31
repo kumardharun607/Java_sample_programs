@@ -1,0 +1,19 @@
+class  Numbergreater
+{
+	public static void main(String[] args) 
+	{
+		if (5>2)
+		{
+			System.out.println("The number is greater than 2");
+		}
+		else if (2>0)
+		{
+			System.out.println("The number is less than 2");
+		}
+		else 
+		{
+			System.out.println("invalid");
+		}
+		System.out.println("Hello World!");
+	}
+}
