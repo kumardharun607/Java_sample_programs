@@ -3,6 +3,7 @@ class Narrowingdouble
 	public static void main(String[] args) 
 	{
 		double a=65.0d;
+		long res5=(long)a;
 		short res1=(short)a;
 		int res2=a;
 		long res3=a;

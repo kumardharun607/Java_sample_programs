@@ -1,12 +1,12 @@
-class Narrowingdouble
+class Narrowingfloat
 {
 	public static void main(String[] args) 
 	{
-		double a=65.0d;
-		short res1=(short)a;
-		int res2=a;
-		long res3=a;
-		float res4=a;
+		float a=66.0f;
+	    byte res2=(byte)a;
+		short res3=(short)a;
+		int res4=(int)a;
+		long res5=(long)a;
 		char res6=(char)a;
 		System.out.println(a);
 		System.out.println(res1);
@@ -14,5 +14,6 @@ class Narrowingdouble
 		System.out.println(res3);
 		System.out.println(res4);
 		System.out.println(res6);
+		System.out.println(res5);
 	}
 }

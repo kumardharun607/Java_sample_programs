@@ -1,0 +1,12 @@
+class Narrowingshort
+{
+	public static void main(String[] args) 
+	{
+        short a=130;
+	    byte res2=(byte)a;
+		System.out.println(a);
+		System.out.println(Byte.Max_value);
+		
+		
+	}
+}
