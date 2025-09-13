@@ -1,0 +1,35 @@
+import java.util.*;
+class  facultys
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		boolean flag=true;
+		do
+		{
+		System.out.println("\t\t1.SQL\n\t\t2.Java\n\t\t3.Exit");
+		String opt=sc.nextLine();
+		switch(opt)
+		{
+			case "idli":{
+				System.out.println("SQL by nagaraj");
+			}
+			case "idli" :{
+				System.out.println("Java by tabrez");
+			}
+			case "pongal" :{
+				System.out.println("SQ by nagaraj");
+			}
+			case "vada" :{
+				
+				flag=false;
+			}
+			default :{
+				System.out.println("Invalid");
+			}
+		}
+		}while(flag);
+		System.out.println("--------Thank you--------");
+			
+	}
+}
