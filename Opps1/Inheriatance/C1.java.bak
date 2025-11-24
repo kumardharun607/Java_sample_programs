@@ -1,0 +1,65 @@
+//single level inheritance
+//static members
+class  A1
+{
+	
+	{
+		System.out.println("Iam a A class multi line initializer="+A.x);
+	}
+	 int x=10;
+	A1()
+	{
+	}
+	A1(int a)
+	{
+		this();
+	}
+	public  void a()
+	{
+		System.out.println("Iam a A class method");
+	}
+		
+}
+/*class B extends A
+{
+	static int x=20;
+	B()
+	{ 
+		super();
+		//L.I
+	}
+	public static void main(String[]args)
+	{
+		System.out.println("X:"+x);
+		B.a();
+		System.out.println("X:"+x);
+	}
+
+		
+}*/
+class C1 extends A1
+{
+	int x=33;
+	 int z=20;
+	C1()
+	{ 
+		
+		super(2);
+		//L.I
+	}
+	{
+		System.out.println(x);
+	}
+	public static void main(String[]args)
+	{
+		/*C1 ref=new C1();
+		C1 ref1= new C1();
+		
+		System.out.println("X:"+ref.x);
+		ref.a();
+		System.out.println("z:"+ref.z);*/
+	}
+
+		
+}
+

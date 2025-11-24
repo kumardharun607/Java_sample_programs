@@ -1,0 +1,23 @@
+import java.util.*;
+class pronic 
+{
+	public static boolean pronic(int num)
+	{
+		for (int i=1;i<num; i++)
+		{
+			if(i*(i+1)==num)
+				return true;
+		}
+		return false;
+	}
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+	   System.out.print("enter the number:");
+	   int num=sc.nextInt();
+	   if(pronic(num))
+		   System.out.println("IT IS PRONIC");
+	   else
+		   System.out.println("IT IS NOT PRONIC");
+	}
+}

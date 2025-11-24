@@ -1,0 +1,133 @@
+import java.util.*;
+class Instagram 
+{
+	static Scanner sc=new Scanner(System.in);
+	//states
+	String name;
+	String emailid;
+	String DoB;
+	private String user_name;
+	private String password;
+	
+	//constructors
+	public Instagram(String name,String emailid,String DoB,String user_name,String password)
+	{
+		this.name=name;
+		this.emailid=emailid;
+		this.DoB=DoB;
+		this.user_name=user_name;
+		this.password=password;
+	}
+	
+	//Behaviours
+	
+	public void display()
+	{
+		System.out.println("Name:"+name);
+		
+		
+		System.out.println("Email Id:"+emailid);
+		System.out.println("DOB:"+DoB);
+
+		System.out.println("---------------------------");
+	}
+	
+	//helper method
+	
+	//getuser_name method
+	public String doverification_getusername(String pass)
+	{
+		if (password.equals(pass))
+		{
+			return getuser_name();
+		}
+		return "Sorry Your Entering password is miss match-------------------";
+	}
+	
+	
+	public String getuser_name()
+	{
+		
+		return user_name;
+	}
+	
+	//get password method
+	
+	public String getuser_password(String username)
+	{
+		if (user_name.equals(username))
+		{
+			return password;
+		}
+		
+		return "Sorry Your Entering User name is miss match-------------------";
+	}
+	
+	//set user_name method
+	
+	
+	
+	
+	
+	public void setuser_name()
+	{
+		System.out.print("Enter the New username:");
+	   
+		String new_username=sc.nextLine();
+						
+		System.out.print("Enter the password:");
+		
+		String passwords=sc.nextLine();
+		
+		
+		
+		if (password.equals(passwords))
+		{
+			user_name=new_username;
+			
+			
+			System.out.println("-----------Successfully Username will be updated---------------");
+		}
+		else
+		{
+			System.out.println("-----------Sorry Username updated will be failed---------------");
+		}
+			
+		
+		
+		
+	}
+	
+	//set password method
+	
+	public void setpassword()
+	{
+		System.out.print("Enter the New password:");
+						
+		String new_password=sc.nextLine();
+						
+		System.out.print("Enter the Username:");
+						
+		String username=sc.nextLine();
+		
+		if (user_name.equals(username))
+		{
+			password=new_password;
+			
+			
+			System.out.println("-----------Successfully password will be updated---------------");
+		}
+		else
+		{
+		
+			System.out.println("-----------Sorry password updated will be failed---------------");
+		
+		}
+		
+	}
+	
+	
+
+
+	
+}

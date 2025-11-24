@@ -1,0 +1,11 @@
+class worker 
+{
+	String name;
+	int id;
+	
+	public void display()
+	{
+		System.out.println("name:"+name);
+		System.out.println("Id:"+id);
+	}
+}

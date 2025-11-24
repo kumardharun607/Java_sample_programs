@@ -1,0 +1,21 @@
+class Database1 
+{
+	private String name;
+	static Database1 db;
+	
+	private Database1(String  name)
+	{
+		this.name=name;
+		System.out.println("Name:"+name);
+		System.out.println("Object creation......");
+	}
+	
+	public static Database1 gendb(String name)
+	{
+		if (db==null)
+		{
+			return new Database1(name);
+		}
+		return db;
+	}
+}

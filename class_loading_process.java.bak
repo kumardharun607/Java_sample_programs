@@ -1,0 +1,31 @@
+class class_loading_process 
+{
+	static boolean b;
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World!"+a);
+		display();
+		
+		System.out.println("The default value of b"+b);
+		b=true;
+		System.out.println("after assign the value"+b);
+		System.out.println("after assign the value"+class_loading_process.b);
+	}
+	public static void display()
+	{
+		System.out.println("This is static method");
+		System.out.println("Static initilizer value:");
+	}
+	public void msg()
+	{
+		System.out.println("This is non static method");
+	}
+	static{
+		System.out.println("static multi line initializer");
+		int a=10;
+		
+	}
+	{
+		System.out.println("Non static multi line initializer");
+	}
+}

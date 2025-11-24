@@ -1,0 +1,28 @@
+import java.util.*;
+class  special_two_digit
+{
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		int sum=0;
+		int product=1;
+		int temp=n;
+		System.out.println("Enter two digit number");
+		int n=sc.nextInt();
+		while(n>0)
+		{
+			sum+=n%10;
+			product*=n%10;
+			n/=10;
+		}
+		int add=sum+product;
+		if(add==temp)
+		{
+			System.out.println("The given number is special two digit number");
+		}
+		else
+		{
+			System.out.println("The given number is not a special two digit number");
+		}
+	}
+}

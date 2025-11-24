@@ -1,0 +1,25 @@
+class Car_obj_gen 
+{
+	public static void main(String[] args) 
+	{
+		Engine e1=new Engine("600cc","300hp",4,"Diesel");
+		car_blueprint car1=new car_blueprint("Bmw","red",7000000,e1);
+		Engine e2=new Engine("800cc","500hp",6,"Diesel");
+
+		car_blueprint car2=new car_blueprint("thor","black",2000000,e2);
+		car_blueprint cars[]={car1,car2};
+		showroom shop=showroom.get_showroomobj("Harsha sir","Vadapalani",cars);
+		
+		System.out.println("___________________Car Info_________________________");
+		for (int i=0;i<shop.get_car().length ;i++ )
+		{
+			car_blueprint car_obj_address=shop.get_car()[i];
+			car_obj_address.details_of_car();
+			System.out.println("*********************************");
+			
+		}
+		
+		
+
+	}
+}

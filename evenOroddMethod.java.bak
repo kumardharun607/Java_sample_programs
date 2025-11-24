@@ -1,0 +1,32 @@
+import java.util.*;
+class  evenOroddMethod
+{
+	static Scanner sc=new Scanner (System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter a number:");
+		int num=sc.nextInt();
+		String res=evenorodd(num);
+		System.out.println(res);
+		
+	}
+	public static String evenorodd(int num)
+	{
+		
+		    String evenodd;
+			if(num%2==0)
+			{
+				evenodd="Even";
+				
+			}
+			else
+		    {
+				evenodd="Odd";
+			}
+			return evenodd;
+	}
+				
+		
+		
+    
+}

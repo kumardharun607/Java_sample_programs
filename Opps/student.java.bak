@@ -1,0 +1,21 @@
+class student 
+{
+	//States 
+	String sname;
+	int sid;
+	double smarks;
+	static String School="St Joseph";
+	
+	//Behaviours
+	
+	public void detailsOfStudents()
+	{
+		System.out.println("Name:"+sname);
+		System.out.println("Id:"+sid);
+		System.out.println("Marks:"+smarks);
+		System.out.println("School:"+school);
+		System.out.println("***************************");
+	}
+
+	
+}

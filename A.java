@@ -1,0 +1,42 @@
+class  A
+{
+	
+	static int x=10;
+	static{
+		System.out.println("Hi iam SMLI-A");
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("Hi Iam Main method of A class");
+		System.out.println(B.y);
+		System.out.println(B.z);
+		System.out.println("Hi Iam Main method of A class");
+	}
+}
+class  B
+{
+	static int z=30;
+	static int y=20;
+	
+	
+	public static void main(String[] args) 
+	{
+		System.out.println("Hi Iam Main method of A class");
+		display();
+		System.out.println(A.x);
+		System.out.println(y);
+		System.out.println(A.x);
+		System.out.println("Hi Iam Main method of A class");
+	}
+	public static void display()
+	{
+		System.out.println("Display method msg");
+	}
+	static{
+		System.out.println("Hi IAm SMLI-B----------------1");
+	}
+	static{
+		System.out.println("Hi Iam SMLI-B----------------2");
+	}
+	
+}

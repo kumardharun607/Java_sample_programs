@@ -1,0 +1,17 @@
+import java.util.*;
+class remove_duplicate_string
+{
+	public static void main(String[] args) 
+	{
+		String s=":helicopterbanana:";
+		String ans="";
+		for (int i=0;i<s.length() ;i++ )
+		{
+			if (ans.indexOf(s.charAt(i))==-1)
+			{
+				ans+=s.charAt(i);
+			}
+		}
+		System.out.println("The answer is:"+ans);
+	}
+}

@@ -1,0 +1,66 @@
+class Employee 
+{
+	String name;
+	String destination;
+	
+	Employee(){}
+	Employee(String name)
+	{
+		//L.I
+		this.name=name;
+	}
+	public void work()
+	{
+		System.out.println(name+" is working");
+	}
+	public static void main(String[]args)
+	{
+		System.out.println(" is working");
+	}
+	
+}
+class Manager extends Employee
+{
+	int teamsize;
+	
+	Manager(String name,int teamsize)
+	{
+		super(name);
+		//L.I
+		this.teamsize=teamsize;
+	}
+	public void manage(Manager m1,String []ar)
+	{
+		m1.main(ar);
+		System.out.println(name+" is managing "+teamsize+ "Teamsize");
+	}
+		
+}
+class dev extends Employee
+{
+	String skill;
+	
+	dev(String name,String skill)
+	{
+		super(name);
+		//L.I
+		this.skill=skill;
+	}
+	public void fixbug()
+	{
+		System.out.println(name+" is fixing a bug by using "+skill+ " Skill");
+	}
+		
+	public static void main(String[]args)
+	{
+		Manager m1=new Manager("Dharun",122);
+		dev d1=new dev("sharvin","java");
+		m1.work();
+		String []ar={"h"};
+				
+
+		m1.manage(m1,ar);
+		d1.work();
+		d1.fixbug();
+	}
+}

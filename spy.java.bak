@@ -1,0 +1,52 @@
+import java.util.*;
+class  spy
+{
+	static Scanner sc=new Scanner (System.in);
+	public static void main(String[] args) 
+	{
+		System.out.print("Enter start number: ");
+		int number=sc.nextInt();
+		
+		if(checkspy(number))
+		{
+			System.out.print("The given number is Neon");
+		}
+		else
+		{
+			System.out.print("The given number is not a Neon");
+		}
+			
+		
+	}
+	public static boolean checkspy(int num)
+	{
+		int sum=0;
+		int product=1;
+		while(num>0)
+		{
+				
+				sum+=num%10;
+				product*=num%10;
+				
+				num/=10;
+		}
+		if(sum==product)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+		
+	}
+	
+					
+			
+		
+				
+			
+		
+	}
+	
+

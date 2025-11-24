@@ -1,0 +1,19 @@
+class DataBase 
+{
+	public String db_name;
+	private String table;
+	private static DataBase db;//object object ref name
+	private DataBase(String db_name,String table)
+	{
+		this.db_name=db_name;
+		this.table=table;
+	}
+	public static DataBase getdataBase(String db_name,String table)
+	{
+		if (db==null)
+		{
+			db=new DataBase(db_name,table);
+		}
+		return db;
+	}
+}

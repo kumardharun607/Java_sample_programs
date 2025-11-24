@@ -1,0 +1,33 @@
+import java.util.*;
+class  linearsearch
+{
+	static Scanner sc=new Scanner(System.in);
+	public static int linear(int []a,int n) 
+	{
+		for (int i=0;i<a.length ;i++ )
+		{
+			if(a[i]==n)
+			{
+				return i;
+			}
+		}
+		return -1;
+	}
+	public static void main(String[]args)
+	{
+		int []a={1,2,3,4};
+		System.out.println(Arrays.toString(a));
+		System.out.print("Enter value which you want:");
+		int n=sc.nextInt();
+		int res=linear(a,n);
+		if(res!=-1)
+		{
+			System.out.println("The element found on syntax is:"+res);
+		}
+		else
+		{
+			System.out.println("The element not a found");
+		}
+		
+	}
+}

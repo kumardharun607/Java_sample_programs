@@ -1,0 +1,21 @@
+class string_assignment2 
+{
+	public static void main(String[] args) 
+	{
+		String s="sy23e4d";
+		String res="";
+		String ans="";
+		for (int i=0;i<s.length() ;i++ )
+		{
+			if (Character.isDigit(s.charAt(i)))
+			{
+				res+=s.charAt(i);
+			}
+		}
+		for (int i=res.length()-1;i>=0 ;i-- )
+		{
+			ans+=res.charAt(i);
+		}
+		System.out.println(ans);
+	}
+}

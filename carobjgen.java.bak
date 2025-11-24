@@ -1,0 +1,11 @@
+import java.util.*;
+class carobjgen {
+  
+    static Scanner sc=new Scanner(System.in);
+    public static void main(String[] args) {
+        car c1 = new car();
+        car c2 = new car();
+        car c3 = new car();
+       System.out.print(c1.owner);
+    }
+}

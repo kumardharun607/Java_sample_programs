@@ -1,0 +1,28 @@
+import java.util.*;
+class panagrams 
+{
+	public static void main(String[] args) 
+	{
+		String s1="bcdefghijklmnopqrstuvwx";
+		char a[]=s1.toCharArray();
+		char m='a';
+		int count =0;
+		for (int i=0;i<a.length && m<='z' ;i++,m++ )
+		{
+			if (a[i]!=m)
+			{
+				count++;
+				System.out.println(m);
+				i--;
+			}
+		}
+		System.out.println(count);
+		count +=a.length;
+		while (count<26)
+		{
+			System.out.println(m++);
+			count++;
+		}
+		
+	}
+}

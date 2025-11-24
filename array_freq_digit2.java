@@ -1,0 +1,28 @@
+import java.util.*;
+class array_freq_digit2 
+{
+	static Scanner sc=new Scanner(System.in); 
+	public static void main(String[] args) 
+	{ 
+		int []a={7,3,4,1,6,3,2,1,8,4,1,12};
+		System.out.println("Arrays before sorting"+Arrays.toString(a));
+		int largest=Integer.MIN_VALUE;
+		for (int i=0;i<a.length ;i++ )
+		{
+			if(a[i]>largest)
+			{
+				largest=a[i];
+			}
+		}
+		int res[]=new int[largest+1];
+		for (int i=0;i<a.length ;i++ )
+		{
+			res[a[i]]++;
+			
+		}
+		for (int i=0;i<res.length ;i++ )
+		{
+			System.out.println(i+"-"+res[i]);
+		}
+	}
+}
