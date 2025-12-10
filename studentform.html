@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .form{
+            background-color:burlywood;
+            color:rgb(109, 4, 4);
+        }
+        label{
+        
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Student Form</h1>
+    <form action="./media/file" method="" autocomplete="off" class="form" >
+        <fieldset  >
+            <legend>Student Information</legend>
+           <label for="search">search</label>
+           <input type="search">
+            <label for="sname" >Student Name</label>
+            <input  type="text" id="sname" placeholder="Student Name" name="sname" value="Dharunkumar">
+        
+            <p></p> <label for="phno">Phone number</label>
+            <input  type="number" required id="phno" placeholder="Phonenumber" name="phono" value="" maxlength="10">
+            <p></p> <label for="dob">DOB</label>
+        
+             <input type="date" id="dob" placeholder="DOB" name="dob" >
+            <br>
+            <br>
+        <label for="pswrd">Password</label>
+        <input type="password" maxlength="5" id="pswrd" name="pswrd" value="" placeholder="Password">
+        <p></p>
+        <label for="age">Age</label>
+        
+        <input type="number" name="age" id="age" placeholder="AGE" value="">
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" readonly name="email" id="email" placeholder="EMAIL" name="email" value="kumardharun607@gmail.com">
+        <br><br>
+        <label for="subject">Subject</label>
+        <p></p>
+        <label for="sub1">HTML</label>
+        <input type="checkbox" name="sub1" id="sub1" value="html">
+         <label for="sub2">CSS</label>
+        <input type="checkbox" name="sub2" id="sub2" value="Css"> 
+        <label for="sub3">Java Script</label>
+        <input type="checkbox" name="sub3" id="sub3" value="js">
+        <br><br>
+        <label for="gender">Gender</label>
+        <br><br>
+        <label for="male">Male</label>
+        <input type="radio" name="Gender" id="male" value="male">
+        <label for="female">Female</label>
+        <input type="radio" name="Gender" id="female" value="female">
+        <label for="others">Others</label>
+        <input type="radio" name="Gender" id="others" value="others">
+        <br><br>
+
+        <label for="address">Address</label>
+        <p></p>
+        <textarea name="address" rows="5" cols="50" id="address" placeholder="Enter your address"></textarea>
+        <br><br>
+        <label for="week">Select week</label>
+        <p></p>
+        <input type="week" name="week" id="week">
+        <p></p>
+        <label for="file">Choose file</label>
+        <p></p>
+        <input type="file" name="file" id="file" >
+        <p></p>
+        <label for="course">Select Course</label>
+        <p></p>
+        <select name="course" id="course">
+        <option value="java">JAVA</option>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="JS">JS</option></select>
+        <p></p>
+        <button type="submit">Submit</button>
+        <button type="reset">reset</button>
+        
+        </fieldset> 
+    </form>
+
+</body>
+</html>

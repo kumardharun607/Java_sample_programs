@@ -1,8 +1,0 @@
-class class3 
-{
-	public static void main(String[] args) 
-	{
-		System.out.println("class1 value:" + class.a);
-		System.out.println("class2 value:" + class.b);
-	}
-}

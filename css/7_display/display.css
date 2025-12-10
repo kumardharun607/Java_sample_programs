@@ -1,0 +1,49 @@
+.outer{
+    height: 500px;
+    width: 800px;
+    background-color: chocolate;
+}
+
+.outer> .box{
+    height: 80px;
+    width: 100px;
+    border: 3px solid white;
+}
+
+.outer> #box1{
+    display: inline-block;
+}
+.outer> #box2{
+    display: inline-block;
+}
+.outer>#box3{
+    display: inline ;
+}
+
+.card{
+    background-color: brown;
+    margin-left: 100px;
+    
+    width: 350px;
+    
+    border-radius: 5%;
+    padding: 20px 40px;
+}
+.card> .button{
+    background-color: blueviolet;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border:none;
+    color: aliceblue;
+    cursor: pointer;
+    
+  
+    
+    
+}
+.card>.button:hover{
+    background-color: blue;
+}
+
